@@ -185,7 +185,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        ArtemSchander\L5Modular\ModuleServiceProvider::class,
         /*
          * Application Service Providers...
          */

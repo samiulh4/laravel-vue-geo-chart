@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Geo Chart</title>
-    <link rel="icon" href="{{ asset('assets/img/logo.png') }}" type="image/svg+xml"/>
-    @vite('resources/css/app.css')
+    <link rel="icon" href="{{ asset('assets/img/logo.png') }}" type="image/png"/>
+{{--    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />--}}
+{{--    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />--}}
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
 <div id="app"></div>
-@vite('resources/js/app.js')
 </body>
 </html>
