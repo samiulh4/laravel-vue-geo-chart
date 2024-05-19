@@ -19,3 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/{route?}', function () {
     return view('vue');
 })->where('route', '.*');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

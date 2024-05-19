@@ -13,13 +13,15 @@ return new class extends Migration
     {
         Schema::create('areas', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('parent_id')->unsigned()->nullable();
+            $table->bigInteger('area_parent_id')->unsigned()->nullable();
             $table->integer('area_type')->unsigned();
             $table->string('area_name_en', 255);
             $table->string('area_name', 255)->nullable();
-            $table->string('iso2', 2)->nullable();
-            $table->string('iso3', 3)->nullable();
+            $table->string('area_iso2', 2)->nullable();
+            $table->string('area_iso3', 3)->nullable();
             $table->string('area_img', 255)->nullable();
+            $table->string('area_latitude', 30)->nullable();
+            $table->string('area_longitude', 30)->nullable();
             $table->tinyInteger('is_active')->default(1);
             $table->bigInteger('created_by')->unsigned()->nullable();
             $table->bigInteger('updated_by')->unsigned()->nullable();
